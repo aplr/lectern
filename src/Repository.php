@@ -233,7 +233,7 @@ class Repository implements RepositoryInterface
     protected function model()
     {
         $modelClass = $this->getModelClass();
-        return new $modelClass;
+        return new $modelClass();
     }
 
     /**
